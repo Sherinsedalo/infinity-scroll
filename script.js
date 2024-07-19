@@ -15,12 +15,12 @@ function displayPhotos() {
     //Creat <a> to link to unspash
     const item = document.createElement("a");
     item.setAttribute("href", photo.links.html);
-    item.setAtribute("target", "_blank");
+    item.setAttribute("target", "_blank");
     // create image for photo
     const img = document.createElement("img");
-    img.setAtribute("src", photo.url.regular);
-    img.setAtribute("alt", photo.alt_descriptiom);
-    img.setAtribute("title", photo.alt_descriptiom);
+    img.setAttribute("src", photo.urls.regular);
+    img.setAttribute("alt", photo.alt_description);
+    img.setAttribute("title", photo.alt_description);
     // put img inside <a>, then put both in imageContainer element
     item.appendChild(img);
     imageContainer.appendChild(item);
